@@ -1,5 +1,13 @@
 {
-    "version": 2,
-    "public": false,
-    "name": "wedding"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--openssl-legacy-provider"
+    }
+  }
 }
